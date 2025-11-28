@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Focus Tab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bg-container"></div>
+
+    <img src="setting.png" id="setting-icon" alt="Settings">
+
+    <div class="container glass-effect">
+        <h1 id="clock">00:00</h1>
+        <h2 class="goal">MỤC TIÊU: ĐI LÀM NĂM 3!</h2>
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Hôm nay phải làm gì? (Enter)">
+        </div>
+        <ul id="taskList">
+            </ul>
+    </div>
+
+    <div id="settings-modal" class="hidden">
+        <div class="modal-content glass-effect">
+            <span id="close-modal">&times;</span>
+            
+            <div class="tabs-menu">
+                <button class="tab-btn active" data-target="tab-about">Giới thiệu</button>
+                <button class="tab-btn" data-target="tab-background">Hình nền</button>
+            </div>
+
+            <div id="tab-about" class="tab-content active">
+                <h3>Focus Tab Extension</h3>
+                <p>Phiên bản tự code để cai nghiện Short video và tập trung vào mục tiêu sự nghiệp!</p>
+                <p>Dev: [Tên ông]</p>
+            </div>
+
+            <div id="tab-background" class="tab-content hidden">
+                <h3>Tùy chỉnh nền</h3>
+                <p style="font-size: 0.9rem; color: #aaa;">Dán link ảnh (.jpg, .png) hoặc video (.mp4) vào đây:</p>
+                <input type="text" id="bg-url-input" placeholder="https://...">
+                
+                <div style="margin-top: 15px; text-align: right;">
+                    <button id="save-bg-btn">Lưu thay đổi</button>
+                    <button id="reset-bg-btn" style="background: #f38ba8;">Mặc định</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
