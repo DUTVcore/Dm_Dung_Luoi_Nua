@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Tab - Năm 3 đi làm!",
+  "version": "1.0",
+  "description": "Thay thế New Tab bằng lịch trình để bớt lười.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["storage"] 
+}
