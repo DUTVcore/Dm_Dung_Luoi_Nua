@@ -34,7 +34,7 @@ Nó biến trình duyệt của bạn thành một "buồng lái" (cockpit) th�
 
 | Default View | Settings Modal |
 |:---:|:---:|
-| ![Main View](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_df.png) | ![Settings](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_tab.png) |
+| ![Main View](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_df.png) | ![Settings](https://github.com/DUTVcore/NightTab/blob/main/Screenshot%202025-12-07%20082705.png) |
 
 ## 🚀 Installation (Cài đặt)
 
