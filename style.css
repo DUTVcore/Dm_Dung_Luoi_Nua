@@ -217,3 +217,66 @@ button:not(.tab-btn) {
     cursor: pointer;
     margin-left: 10px;
 }
+
+/* Nút Recheck (Góc trên phải container) */
+#recheck-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px; /* Đối diện nút drag */
+    width: 24px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.3s;
+    filter: invert(1); /* Màu trắng */
+    z-index: 50;
+}
+#recheck-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+#recheck-btn.active {
+    filter: sepia(1) hue-rotate(150deg) saturate(5); /* Đổi màu khi đang xem lại */
+    opacity: 1;
+}
+
+/* Khu vực Focus Mode */
+.focus-mode-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#focus-input {
+    flex: 1;
+    padding: 8px;
+    background: rgba(49, 50, 68, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+#toggle-focus-btn {
+    background: #a6e3a1; /* Màu xanh lá */
+    color: #1e1e2e;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.2s;
+    margin-left: 0; /* Override margin cũ */
+}
+
+#toggle-focus-btn.focusing {
+    background: #f38ba8; /* Màu đỏ khi đang bật */
+    content: "STOP FOCUS";
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(243, 139, 168, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(243, 139, 168, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(243, 139, 168, 0); }
+}

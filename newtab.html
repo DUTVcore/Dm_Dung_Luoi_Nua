@@ -8,9 +8,10 @@
 <body>
     <div id="bg-container"></div>
 
-    <img src="setting.png" id="setting-icon" alt="Settings">
+    <img src="setting.png" id="setting-icon" alt="Settings" title="Cài đặt">
 
     <div id="main-container" class="glass-effect">
+        <img src="recheck.png" id="recheck-btn" alt="Review" title="Xem lại nhiệm vụ hôm qua">
         
         <img src="button.png" id="drag-handle" alt="Move" title="Giữ chuột để kéo">
 
@@ -21,9 +22,16 @@
 
         <h2 class="goal">MỤC TIÊU: ĐI LÀM NĂM 3!</h2>
         
+        <div class="focus-mode-container">
+            <input type="text" id="focus-input" placeholder="Web cần tập trung (vd: leetcode.com)">
+            <button id="toggle-focus-btn">BẬT FOCUS</button>
+        </div>
+        
         <div class="input-group">
             <input type="text" id="taskInput" placeholder="Hôm nay làm gì? (Enter)">
         </div>
+        
+        <h4 id="list-title" style="text-align: left; margin: 10px 0 5px 0; display:none;">Hôm nay:</h4>
         <ul id="taskList"></ul>
     </div>
 
@@ -32,28 +40,21 @@
             <span id="close-modal">&times;</span>
             
             <div class="tabs-menu">
-                <button class="tab-btn active" data-target="tab-general">Giao diện</button>
+                <button class="tab-btn active" data-target="tab-general">Chung</button>
                 <button class="tab-btn" data-target="tab-background">Hình nền</button>
-                <button class="tab-btn" data-target="tab-about">Giới thiệu</button>
             </div>
 
             <div id="tab-general" class="tab-content active">
-                <h3>Tùy chỉnh giao diện</h3>
-                
+                <h3>Cấu hình "Cú Đêm"</h3>
                 <div class="setting-item">
-                    <label>Kích thước chữ (Zoom):</label>
-                    <input type="range" id="zoom-range" min="0.8" max="1.5" step="0.1" value="1">
+                    <label>Giờ reset nhiệm vụ (0-23h):</label>
+                    <div style="display:flex; gap:10px;">
+                        <input type="number" id="reset-hour-input" min="0" max="23" value="0" style="width: 70px;">
+                        <span style="align-self: center; font-size: 0.9rem; color: #a6adc8;">(Ví dụ: 3 là 3h sáng mới sang ngày mới)</span>
+                    </div>
                 </div>
-
-                <div class="setting-item">
-                    <label>Font chữ:</label>
-                    <select id="font-select">
-                        <option value="'Segoe UI', sans-serif">Mặc định (Segoe UI)</option>
-                        <option value="'Courier New', monospace">Code (Courier New)</option>
-                        <option value="'Times New Roman', serif">Cổ điển (Times)</option>
-                        <option value="'Arial', sans-serif">Đơn giản (Arial)</option>
-                        <option value="cursive">Viết tay (Cursive)</option>
-                    </select>
+                <div class="setting-item" style="margin-top:20px;">
+                    <button id="save-settings-btn">Lưu Cài Đặt</button>
                 </div>
             </div>
 
@@ -61,15 +62,9 @@
                 <h3>Tùy chỉnh nền</h3>
                 <input type="text" id="bg-url-input" placeholder="Link ảnh/video...">
                 <div style="margin-top: 15px; text-align: right;">
-                    <button id="save-bg-btn">Lưu</button>
+                    <button id="save-bg-btn">Lưu Nền</button>
                     <button id="reset-bg-btn" style="background: #f38ba8;">Mặc định</button>
                 </div>
-            </div>
-
-            <div id="tab-about" class="tab-content hidden">
-                <h3>Focus Tab</h3>
-                <p>Dev: DUTVcore</p>
-                <p>Version: 2.0 (Drag & Drop Edition)</p>
             </div>
         </div>
     </div>
