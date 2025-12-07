@@ -280,3 +280,33 @@ button:not(.tab-btn) {
     70% { box-shadow: 0 0 0 10px rgba(243, 139, 168, 0); }
     100% { box-shadow: 0 0 0 0 rgba(243, 139, 168, 0); }
 }
+
+/* --- CSS CHO TAB LIÊN HỆ --- */
+.qr-img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #a6e3a1;
+    transition: transform 0.3s;
+}
+.qr-img:hover {
+    transform: scale(1.05);
+}
+
+.profile-card p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Chia đều 4 nút Tab */
+.tabs-menu {
+    display: flex;
+    justify-content: space-between; /* Chia đều khoảng cách */
+}
+
+.tab-btn {
+    flex: 1; /* Mỗi nút chiếm 1 phần bằng nhau */
+    text-align: center;
+    padding: 10px 5px; /* Giảm padding ngang chút để đỡ chật */
+    white-space: nowrap; /* Không xuống dòng chữ */
+}

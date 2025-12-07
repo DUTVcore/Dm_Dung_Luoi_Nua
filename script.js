@@ -90,11 +90,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     applySettings(savedZoom, savedFont);
 
+    // if (zoomRange) {
+    //     zoomRange.value = savedZoom;
+    //     zoomRange.addEventListener('input', (e) => {
+    //         applySettings(e.target.value, savedFont);
+    //         localStorage.setItem('appZoom', e.target.value);
+    //     });
+    // }
+// Tìm đoạn này trong script.js (Section 4)
     if (zoomRange) {
         zoomRange.value = savedZoom;
+        // Cập nhật thêm dòng này để hiển thị số ban đầu
+        const zoomValDisplay = document.getElementById('zoom-val'); 
+        if(zoomValDisplay) zoomValDisplay.innerText = savedZoom;
+    
         zoomRange.addEventListener('input', (e) => {
             applySettings(e.target.value, savedFont);
             localStorage.setItem('appZoom', e.target.value);
+            // Cập nhật số khi kéo
+            if(zoomValDisplay) zoomValDisplay.innerText = e.target.value;
         });
     }
 
