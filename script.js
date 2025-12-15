@@ -294,12 +294,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function activeFocusUI(isActive, domain = "") {
         if (!toggleFocusBtn || !focusInput) return;
         if (isActive) {
-            toggleFocusBtn.textContent = "DỪNG LẠI";
+            toggleFocusBtn.textContent = "STOP FOCUS";
             toggleFocusBtn.classList.add('focusing');
             focusInput.value = domain;
             focusInput.disabled = true;
         } else {
-            toggleFocusBtn.textContent = "BẬT FOCUS";
+            toggleFocusBtn.textContent = "TURN ON FOCUS";
             toggleFocusBtn.classList.remove('focusing');
             focusInput.disabled = false;
         }
