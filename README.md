@@ -6,65 +6,81 @@
 
 > **"Stop Simping. Start Coding. Get Hired."**
 
-## 📖 Introduction (Giới thiệu)
+## 📖 Introduction
 
-**Focus Tab** (tên mã: *Dm_Dung_Luoi_Nua*) là một tiện ích mở rộng cho Chrome (Chrome Extension) được xây dựng với mục đích thay thế trang "New Tab" nhàm chán mặc định.
+**Focus Tab** (Codename: *Dm_Dung_Luoi_Nua*) is a Chrome Extension designed to replace the boring default "New Tab" page.
 
-Dự án này sinh ra từ nhu cầu cá nhân: Tôi cần một không gian làm việc tối giản, loại bỏ sự xao nhãng từ MXH/Short Videos, và tập trung tối đa vào mục tiêu **đi làm vào năm 3 Đại học**.
+This project was born from a personal necessity: I needed a minimalist workspace to eliminate distractions from Social Media/Short Videos and maximize focus on my main goal: **Getting hired by my Junior year**.
 
-Nó biến trình duyệt của bạn thành một "buồng lái" (cockpit) thực thụ với lịch trình, mục tiêu và hình nền động tạo cảm hứng.
+It transforms your browser into a true "cockpit"—complete with schedules, goals, and inspiring dynamic backgrounds to keep your momentum going.
 
-## ✨ Features (Tính năng)
+## ✨ Features
 
-* **⚡ Lightweight Core:** Viết bằng Vanilla JS (thuần), không dùng Framework nặng nề. Tối ưu RAM như Chrome chạy trên 4GB RAM.
-* **🎯 Goal Reminder:** Luôn hiển thị mục tiêu quan trọng nhất ngay giữa màn hình. Không bao giờ quên mình đang cày vì cái gì.
+* **⚡ Lightweight Core:** Written in **Vanilla JS**. No heavy frameworks involved. RAM usage is optimized to run smoothly even on 4GB RAM systems (just like Chrome intended).
+* **🎯 Goal Reminder:** Keeps your most important goal front and center. Never forget what you are grinding for.
+* **📅 Future-Ready Task Manager:**
+    * **Plan Ahead:** Supports adding tasks for specific dates in the future.
+    * **Schedule Forwarding:** Manage your workload days in advance so you never get hit by a surprise deadline.
+* **⏰ Precision Timing (Optional):**
+    * **Time Management Module:** Assign specific time slots to your tasks.
+    * **Toggle Mode:** Fully customizable. Switch to "Hardcore Mode" for minute-by-minute discipline, or turn it off for a cleaner, stress-free interface.
+* **🎨 Deep Customization:** Extended UI control (Fonts, UI Scaling, Opacity, etc.). Make the dashboard fit your personal aesthetic.
 * **🎬 Dynamic Background:**
-    * Hỗ trợ hình nền tĩnh (JPG/PNG).
-    * **Hỗ trợ Video nền (MP4/WebM):** Cho phép dùng video (ví dụ: Toothless Dancing, Cyberpunk City...) để tăng độ ngầu.
-* **📝 Fast Todo-list:** Lưu trữ công việc cần làm vào LocalStorage. Tắt trình duyệt không mất dữ liệu.
-* **⚙️ Quick Settings:** Giao diện cài đặt dạng Modal kính mờ (Glassmorphism), cho phép thay đổi hình nền chỉ bằng 1 đường link.
+    * Supports static images (JPG/PNG).
+    * **Live Wallpaper Support (MP4/WebM):** Use video backgrounds (e.g., *Toothless Dancing*, *Cyberpunk City*, *Lofi Hip Hop*) for maximum vibes.
+* **📝 Fast Todo-list:** Tasks are persisted via `LocalStorage`. Your data remains safe even after closing the browser.
+* **⚙️ Quick Settings:** A sleek, Glassmorphism-style modal for instant configuration.
 
-## 🛠️ Tech Stack (Công nghệ)
+## 🛠️ Tech Stack
 
 * **Frontend:** HTML5, CSS3 (Flexbox, Backdrop-filter).
 * **Logic:** JavaScript (ES6+).
 * **Storage:** Chrome LocalStorage API.
 
-## 📸 Screenshots (Hình ảnh)
+## 📸 Screenshots
 
 | Default View | Settings Modal |
 |:---:|:---:|
 | ![Main View](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_df.png) | ![Settings](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_tab.png) |
 
-## 🚀 Installation (Cài đặt)
+## 🚀 Installation
 
-Hiện tại dự án đang ở dạng **Developer Preview** (chưa up lên Store), bạn có thể cài đặt thủ công ("Side-load") như sau:
+The project is currently in **Developer Preview**. You can "side-load" it manually:
 
-1.  **Clone repository này về máy:**
+1.  **Clone this repository:**
     ```bash
     git clone https://github.com/Plnboverclocking/Dm_Dung_Luoi_Nua.git
     ```
-2.  Mở trình duyệt Chrome (hoặc Edge/Brave), gõ vào thanh địa chỉ:
+2.  Open Chrome (or Edge/Brave) and navigate to:
     `chrome://extensions/`
-3.  Bật chế độ **Developer mode** (Góc trên bên phải).
-4.  Bấm nút **Load unpacked** -> Chọn thư mục vừa clone về.
-5.  Mở Tab mới và tận hưởng!
+3.  Enable **Developer mode** (Toggle in the top right corner).
+4.  Click **Load unpacked** -> Select the folder you just cloned.
+5.  Open a New Tab and enjoy!
 
-## 🗺️ Roadmap (Dự định)
+## 🗺️ Roadmap
 
-- [x] Hiển thị đồng hồ & Todo list cơ bản.
-- [x] Tùy chỉnh hình nền (Ảnh/Video).
-- [ ] **Block Site Mode:** Tự động chặn Facebook/TikTok trong giờ làm việc.
-- [ ] **Google Calendar Sync:** Đồng bộ lịch học Bách Khoa.
-- [ ] **Pomodoro Timer:** Tích hợp đồng hồ đếm ngược.
+### Phase 1: Core Foundation (Completed)
+- [x] Basic Clock & Todo List display.
+- [x] Background customization (Image/Video).
+- [x] LocalStorage Data Persistence.
+
+### Phase 2: Enhanced Productivity (Current Focus)
+- [ ] **Future Task Scheduler:** Plan tasks for tomorrow or next week.
+- [ ] **Time Management Module:** Toggleable time slots for specific tasks.
+- [ ] **Extended Personalization:** Advanced UI tweaking options.
+
+### Phase 3: Advanced Features
+- [ ] **Block Site Mode:** Automatically block Facebook/TikTok during work hours.
+- [ ] **Google Calendar Sync:** Sync with University schedules/Google Calendar.
+- [ ] **Pomodoro Timer:** Integrated focus timer.
 
 ## 🤝 Contributing
 
-Pull requests are welcome! Nếu bạn cũng muốn "cai nghiện" lười biếng, hãy fork và đóng góp code.
+Pull requests are welcome! If you also want to cure your laziness and optimize your workflow, feel free to fork and contribute.
 
 ## 👨‍💻 Author
 
-DUTVcore
+**DUTVcore**
 * Student at Da Nang University of Science and Technology (DUT).
 * Major: Computer Engineering.
 * Interests: PC Hardware, Overclocking, Embedded Systems.
