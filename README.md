@@ -41,9 +41,9 @@ It transforms your browser into a true "cockpit"—complete with schedules, goal
 
 ## 📸 Screenshots
 
-| Default View | Settings Modal |
+| Default View | Settings Modal (First version)|
 |:---:|:---:|
-| ![Main View](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_df.png) | ![Settings (First verison)](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_tab.png) |
+| ![Main View](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_df.png) | ![Settings](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_tab.png) |
 
 ## 🚀 Installation
 
