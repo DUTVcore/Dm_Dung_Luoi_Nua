@@ -51,7 +51,7 @@ Hiện tại dự án đang ở dạng **Developer Preview** (chưa up lên Stor
 
 1.  **Clone repository này về máy:**
     ```bash
-    git clone [https://github.com/Plnboverclocking/Dm_Dung_Luoi_Nua.git](https://github.com/Plnboverclocking/Dm_Dung_Luoi_Nua.git)
+    git clone https://github.com/DUTVcore/Dm_Dung_Luoi_Nua.git
     ```
 2.  Mở trình duyệt Chrome (hoặc Edge/Brave), gõ vào thanh địa chỉ:
     `chrome://extensions/`
