@@ -43,7 +43,7 @@ It transforms your browser into a true "cockpit"—complete with schedules, goal
 
 | Default View | Settings Modal |
 |:---:|:---:|
-| ![Main View](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_df.png) | ![Settings](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_tab.png) |
+| ![Main View](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_df.png) | ![Settings (First verison)](https://github.com/DUTVcore/NightTab/blob/main/Screenshot_tab.png) |
 
 ## 🚀 Installation
 
